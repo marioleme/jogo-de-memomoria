@@ -14,7 +14,7 @@
   height: 100px;
 }
 
-.memory-card_front {
+.memory-card.-front {
   width: 155px;
   height: 155px;
   background: #fff;
@@ -22,16 +22,21 @@
   border-radius: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-.memory-card_front > .ball {
+.memory-card.-front::before {
   width: 97px;
   height: 94px;
   background-color: #d4d4d4;
   border-radius: 50%;
+  content: "";
+  position: absolute;
 }
-.memory-card_front > .ball > .icon{
-    width: 100px;
-    height: 100px;
+
+.memory-card.-front .icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translateY(-10px);
 }
