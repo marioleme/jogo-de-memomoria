@@ -1,5 +1,4 @@
-const createMemoryCard =  ()  => {
-   return `
+const createMemoryCard =  ()  => `
     <article class="memory-card"">
         <img 
             src="img/icon-collabcode.svg" 
@@ -9,10 +8,9 @@ const createMemoryCard =  ()  => {
             >
     </article> `;
 
-}
 
-const createMemoryCardFront = () =>  {
-  return `
+
+const createMemoryCardFront = () =>   `
     <article class="memory-card -front">
          <img 
             class="icon" 
@@ -22,7 +20,7 @@ const createMemoryCardFront = () =>  {
             >
     </article> `;
     
-}
+
 
 function hardleClick(){
   console.log('AE');
