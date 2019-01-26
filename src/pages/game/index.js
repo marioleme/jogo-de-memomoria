@@ -1,23 +1,24 @@
 
-createMemoryCardFront();
-createMemoryCardFront();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
+const $root = document.querySelector('#root');
+const $cardsWrapper = createCardsWrapper();
+const $memoryCard = createMemoryCard();
+const $createMemoryCardFront = createMemoryCardFront();
 
 
-const $Cards = document.querySelectorAll(".memory-card")
+$cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $createMemoryCardFront);
+$cardsWrapper.insertAdjacentHTML("beforeend", $createMemoryCardFront);
 
-$Cards.forEach(function ($card, key) {
-    $card.addEventListener("click", mostrarFace)
-})
+$root.insertAdjacentElement('beforeend', $cardsWrapper);
 
-function mostrarFace() {
-    alert('Clicou');
-}
+
+
+
 
 
 

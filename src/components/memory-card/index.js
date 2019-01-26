@@ -1,31 +1,29 @@
-function createMemoryCard() {
-    const $memoryCard = document.createElement("article");
-    const $icon = `
-    <img 
-        src="img/icon-collabcode.svg" 
-        alt="Gueio - Mascote da CollabCode"
-        class="icon"
-        >`;
-
-    $memoryCard.classList.add("memory-card");
-    $memoryCard.insertAdjacentHTML("afterbegin", $icon);
-    $wrapCards.insertBefore($memoryCard, null);
+const createMemoryCard =  ()  => {
+   return `
+    <article class="memory-card"">
+        <img 
+            src="img/icon-collabcode.svg" 
+            alt="Gueio - Mascote da CollabCode"
+            class="icon"
+             onClick="hardleClick()"
+            >
+    </article> `;
 
 }
 
-function createMemoryCardFront(){
-    const $memoryCard_js = document.createElement("article");
+const createMemoryCardFront = () =>  {
+  return `
+    <article class="memory-card -front">
+         <img 
+            class="icon" 
+            src="img/icon-js.png" 
+            alt="Js"
+            onClick="hardleClick()"
+            >
+    </article> `;
+    
+}
 
-    const $icon_js = `
-    <img 
-    class="icon" 
-    src="img/icon-js.png" 
-    alt="Js"
-    >`
-        ;
-    $memoryCard_js.classList.add('memory-card');
-    $memoryCard_js.classList.add("-front");
-
-    $wrapCards.insertBefore($memoryCard_js, null);
-    $memoryCard_js.insertAdjacentHTML("afterbegin", $icon_js);
+function hardleClick(){
+  console.log('AE');
 }
