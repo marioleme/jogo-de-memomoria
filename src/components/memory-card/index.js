@@ -1,5 +1,4 @@
-const createMemoryCard = (src,nameClass,alt) => {
-  return `
+const createMemoryCard =  ({src, alt, nameClass})  => `
     <article class="memory-card ${nameClass}">
             <img 
                 src="${src}" 
@@ -8,7 +7,6 @@ const createMemoryCard = (src,nameClass,alt) => {
                 onClick="hardleClick()"
                 >
         </article> 
-        `;
-};
+      `;
 
 const hardleClick = () => console.log("AE");
