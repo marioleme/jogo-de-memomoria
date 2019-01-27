@@ -54,9 +54,6 @@ $style.textContent = `
 
 $heade.insertBefore($style,null);
 
-
-
-
 const createMemoryCard =  ({src, alt, nameClass})  => `
     <article class="memory-card ${nameClass}">
             <img 
