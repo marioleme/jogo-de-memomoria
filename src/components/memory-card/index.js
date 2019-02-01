@@ -76,5 +76,15 @@ const MemoryCard = () => {
 };
 
 const hardleClick = $component => {
-  $component.classList.toggle("-active");
-};
+  const $cardActive = document.querySelectorAll(".memory-card.-active .card.-front");
+  let count = $cardActive.length;
+  if (count <= 1) {
+    $component.classList.toggle("-active");
+    count += 1;
+  
+  }
+  setTimeout(function(){
+    $component.classList.remove("-active");
+  },3000)
+  
+  }
