@@ -1,6 +1,8 @@
 const $root = document.querySelector("#root");
 const $cardsWrapper = createCardsWrapper();
 
+const createMemoryCard = MemoryCard();
+
 const $memoryCard = createMemoryCard({
   src: "img/icon-collabcode.svg",
   alt: "Gueio - Mascote da CollabCode"
@@ -73,3 +75,5 @@ $cardsWrapper.insertAdjacentHTML("beforeend", $createMemoryCardWoman);
 $cardsWrapper.insertAdjacentHTML("beforeend", $createMemoryCardimgSettings);
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
+
+

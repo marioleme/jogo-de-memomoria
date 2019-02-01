@@ -1,8 +1,9 @@
+const MemoryCard =  ()  =>  {
 
 const $heade = document.querySelector('head');
-const $style= document.createElement('style');
- 
-$style.textContent = `
+  const $style = document.createElement('style');
+
+  $style.textContent = `
 .memory-card {
   width: 155px;
   height: 155px;
@@ -52,9 +53,9 @@ $style.textContent = `
 
 `;
 
-$heade.insertBefore($style,null);
+$heade.insertBefore($style, null);
 
-const createMemoryCard =  ({src, alt, nameClass})  => `
+  return ({ src, alt, nameClass }) => `
     <article class="memory-card ${nameClass}">
             <img 
                 src="${src}" 
@@ -64,7 +65,10 @@ const createMemoryCard =  ({src, alt, nameClass})  => `
                 >
         </article> 
       `;
+};
 
 
 
 const hardleClick = () => console.log("AE");
+
+
